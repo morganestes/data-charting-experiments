@@ -25,7 +25,7 @@
 			pluginSlugs.forEach(function(slug, index) {
 				console.debug('Getting data for ' + slug);
 				ajaxRequests[index] = new XMLHttpRequest();
-				ajaxRequests[index].open('GET', '/data/' +
+				ajaxRequests[index].open('GET', 'data/' +
 					slug + '.json', true);
 				ajaxRequests[index].onload = function(e) {
 					if (this.status === 200) {
